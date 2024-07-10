@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
+  <link rel="stylesheet" href="cont.css">
 </head>
 <body>
   <div id="navbar">
-    <div style="left: 0px; top: 15px; position: absolute; color: white; font-size: 48px; font-family: Inter; font-weight: 400; word-wrap: break-word" class="menu"><a href="/CLAD-Website/index.html">C.L.A.D.</a></div>
-    <div style="left: 315px; top: 17px; position: absolute; color: white; font-size: 36px; font-family: Inter; font-weight: 400; word-wrap: break-word" class="menu"><a href="/CLAD-Website/index.html">Home</a></div>
+    <div style="left: 0px; top: 15px; position: absolute; color: white; font-size: 48px; font-family: Inter; font-weight: 400; word-wrap: break-word" class="menu"><a href="index.html">C.L.A.D.</a></div>
+    <div style="left: 315px; top: 17px; position: absolute; color: white; font-size: 36px; font-family: Inter; font-weight: 400; word-wrap: break-word" class="menu"><a href="index.html">Home</a></div>
     <div style="width: 158px; height: 42px; left: 461px; top: 17px; position: absolute; color: white; font-size: 36px; font-family: Inter; font-weight: 400; word-wrap: break-word" class="menu"><a href="contact.html">Contact</a><br/></div>
     <div style="width: 207px; height: 88px; left: 992px; top: 0px; position: absolute; background: rgba(217, 217, 217, 0); border: 4px white solid"></div>
     <div style="left: 1030px; top: 17px; position: absolute; color: white; font-size: 36px; font-family: Inter; font-weight: 400; word-wrap: break-word" class="menu"><a href="clad.html">C.L.A.D.</a></div>
@@ -26,10 +27,10 @@
     </header>
     <main>
       <section id="form">
-          <form action="https://formspree.io/f/xknddggo" method="post">
-          <input type="text" name="name" placeholder="Your name" required>
-          <input type="email" name="email" placeholder="Your email address" required>
-          <textarea name="message" placeholder="Your message"></textarea required>
+        <form action="https://formspree.io/f/xknddggo" method="post">
+          <input type="text" name="name" placeholder="Your name">
+          <input type="email" name="email" placeholder="Your email address">
+          <textarea name="message" placeholder="Your message"></textarea>
           <button type="submit">Send</button>
         </form>
       </section>
@@ -48,6 +49,73 @@
   </div>
 </body>
 <style>
+  body {
+    font-family: sans-serif;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  main {
+    padding: 2rem 0;
+  }
+  
+  #form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #info {
+    margin-top: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
   .whitespace{
     color: rgb(255, 255, 255);
   }
